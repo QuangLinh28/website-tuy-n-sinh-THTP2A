@@ -79,7 +79,7 @@ export default function AdminDashboard({
 
   const handleUnlockAdmin = (e: React.FormEvent) => {
     e.preventDefault();
-    if (passkey.toLowerCase() === 'admin' || passkey === '123456') {
+    if (passkey.toLowerCase() === 'admin' || passkey === '1234568') {
       setIsAdminUnlocked(true);
       setGateError('');
     } else {
