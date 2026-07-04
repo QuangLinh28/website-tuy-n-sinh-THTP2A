@@ -79,11 +79,11 @@ export default function AdminDashboard({
 
   const handleUnlockAdmin = (e: React.FormEvent) => {
     e.preventDefault();
-    if (passkey.toLowerCase() === 'admin' || passkey === '1234568') {
+    if (passkey.toLowerCase() === 'admin' || passkey === '123459') {
       setIsAdminUnlocked(true);
       setGateError('');
     } else {
-      setGateError('Mật mã cán bộ không chính xác. Thử lại bằng từ khóa "admin" hoặc "123456".');
+      setGateError('Mật mã cán bộ không chính xác.');
     }
   };
 
@@ -255,12 +255,6 @@ export default function AdminDashboard({
             Mở khóa dữ liệu tuyển sinh
           </button>
         </form>
-
-        <div className="bg-slate-50 p-3.5 rounded-xl border border-slate-100/60 text-[11px] text-slate-500 leading-normal text-left space-y-1">
-          <strong>Thông tin mô phỏng Cán bộ (Demo):</strong>
-          <p>Mật mã trải nghiệm: <strong className="font-mono text-blue-900">admin</strong> hoặc <strong className="font-mono text-blue-900">123456</strong></p>
-          <p className="italic text-[10px] text-slate-400">Giao diện này cho phép cán bộ trường xét duyệt hồ sơ thực tế, thay đổi trạng thái, viết giải trình phản hồi và xuất báo cáo dữ liệu tuyển sinh.</p>
-        </div>
       </div>
     );
   }
