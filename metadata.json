@@ -1,0 +1,8 @@
+{
+  "name": "Cổng Tuyển Sinh Lớp 1 Nguyễn Bỉnh Khiêm",
+  "description": "Hệ thống đăng ký tuyển sinh Lớp 1 trực tuyến và cổng tra cứu hồ sơ dành cho Phụ huynh và Ban tuyển sinh trường Tiểu học Thường Phước 2A, Đồng Tháp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
